@@ -1,7 +1,8 @@
 import png 
 from os import walk 
 
-backplate = False 
+question_input = input('Include backplate in calculation? (y/n) > ')
+backplate = True if question_input == 'y' else False 
 
 filenames = next(walk('inputs'), (None, None, []))[2]
 
